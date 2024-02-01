@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--This web page was made by:
+     cavri johnson
+    01/29/2024
+cavjohns@uat.edu-->
+<!--This is the start of the html stuff-->
+<html lang="en">
+
+<head>
+    <!--links always go in here-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this is the link from html file to js resources-->
+    <script src=code.js></script>
+    <!--we need a style sheet to define the styles for our page-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--The title at the top of the window bar-->
+    <title>Cavri's Game page</title>
+</head>
+
+<body id="main" style="background-color: rgb(65, 110, 157);">
+    <!--this is for slide out navigation panel-->
+    <div id="mySidenav" class="sidenav">
+        <!--this links it to js just incase the link in the head does not and it also adds the close button and function-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!--This will take you to the index page-->
+        <a href="index.html">Home</a>
+        <!--This will take you to the boards page-->
+        <a href="board.html">Boards</a>
+        <!--This will take you to the game page page-->
+        <a href="game.html">Game</a>
+    </div>
+
+    <h1 style="text-align: center;"> Welcome to my Game Page</h1>
+
+    <!--This is for navigation I put it on the right for easier access since it's closer to the scroll bar-->
+
+    <nav class="navb"  onclick="openNav()">
+        <h2>&#9776; Navigation</h2></nav>
+
+        <!-- this is old nav <nav style="text-align: right;">
+        <h2>
+            Navigation
+        </h2>
+        This will take you to the index page-->
+        <!--<a href="index.html"> Home </a><br>
+        This will take you to the boards page-->
+        <!-- <a href="board.html"> Boards</a><br>
+        This will take you to the game page page-->
+        <!--<a href="game.html"> Game</a>
+    -->
+
+        <h3 class="blink Rainbow " style="text-align: center;" >Want to play craps?</h3> <br>
+
+        <p style="text-align: left;">The rules of craps: <br>
+            1. Roll two dice <br>
+            2. If the sum of the die is 7 or 11, you lose!<br>
+            3. If the dice are equal to each other (aka doubles) and even, you win! <br> </p>
+        <div style="text-align: center;"> Die 1 result: <div id="die1Res">press "play Craps" to start game</div> <br>
+        Die 2 result: <div id="die2Res">press "play Craps" to start game</div> <br>
+        Sum of the dice: <div id="diceSum">press "play Craps" to start game</div> <br>
+        Game result: <div id="gameRes">press "play Craps" to start game</div> <br>
+        <br>
+        Press button to play craps. <br>
+        <button onclick="playCraps();" class="nbutton " >Play Craps!</button><br></div>
+</body>
+
+</html>

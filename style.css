@@ -1,0 +1,192 @@
+/*this is  my css page for styling my web pages*/
+/*this was to style navigation on my web pages
+most of it was to reserves space for when /if the screen is smaller than on desktop but i did not like the way it looked
+nav{
+    text-align: right;
+    height: 200px;
+    width: 10px;
+    float: right;
+    padding: 5px;
+    line-height: 20px;
+}*/
+
+/*this makes a blink animation class that can be added to text*/
+.blink {
+
+    animation: blink-animation 1.5s steps(5, start) infinite;
+
+    -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+
+}
+/*this is the animation itself*/
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+/*this makes the enjoyment more colorful
+it is a clas that when added makes the color rainbow */
+.Rainbow {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/*this class is used to give font and style the header of the strings page */
+.script {
+    font-family: fantasy cursive;
+    text-align: center;
+}
+
+/*this class is to be added to strings page buttons to give them stlye*/
+.button {
+    width: 100px;
+    height: 30;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: goldenrod;
+    cursor: pointer;
+}
+.nbutton {
+    width: 100px;
+    height: 30;
+    border-radius: 10px;
+    border-color: goldenrod;
+    cursor: pointer;
+    background: transparent;
+}
+.openbtn {
+    float:right;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent ;
+    color: #111;
+    padding: 10px 15px;
+    border: none;
+  }
+  /* this so far is the best method i have of keping the nav button for 
+  the slide out panle from going all the way across the screen i've 
+  tride to do a lot of different things but this is the only one that allows me to keep 
+  right alignment without throwing my letters out of wack or having 
+  the nav buttons space going all acros the screen i would love help on this  */
+.navb {
+    white-space:nowrap;
+    text-align: right !important;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: transparent;
+    cursor: pointer;
+    
+    
+    
+}
+/*trying something for better looking nav*/
+/*body {
+    margin-right: 140px;
+}*/
+.sidenav {
+    /*controls the hight of the background*/
+    height: 100%;
+    /*controls the width of the backround should be left on 0 
+    so it can be slide out wit java script function open side nav*/
+    width: 0;
+    /*this makes it position fixed making it separate from the web page */
+    position: fixed;
+    /*specifies the stack level*/
+    z-index: 1;
+    /*specifise how far the top margin edge is offset*/
+    top: 0;
+    /*specifise how far the right margin edge is offset 
+    it also controls which side it slides from if it was left 
+    the nav panel would slide out from the left*/
+    right: 0;
+    /*background color of the panel*/
+    background-color: #111;
+    /*specifise the handling of the pver flow the x desribes th direction
+    horizontal */
+    overflow-x: hidden;
+    /*controls how fast the slide transition happens*/
+    transition: .5s;
+    /*controls the thickness of the padding area from the top
+    in other word controls how far the text will be from the top*/
+    padding-top: 40px;
+}
+
+/*this is for the text in the navigation panel*/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/*this controls what happens to the text when the cursor
+  is hovering over it*/
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/*this is for the close button*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+  }
+
+/*this allows it to be controlled by a java script function*/
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+.r {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 1px;
+  border-color: transparent;
+  cursor: pointer; 
+}
+
+    .right-align{text-align:right!important}
+    .bar-item{padding:8px 16px;
+        float:left;
+        width:auto;
+        border:none;
+        display:block;
+        outline:0;}
+    .sbutton{
+        border:none;
+        display:inline-block;
+        padding:8px 16px;
+        vertical-align:middle
+        ;overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color: Rainbow ;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap;}
